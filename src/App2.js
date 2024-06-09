@@ -4,6 +4,8 @@ import App from './App';
 function App2() {
   return (
    <>
+<div ></div>
+
    <Navbar2/>
    <App/>
    </>

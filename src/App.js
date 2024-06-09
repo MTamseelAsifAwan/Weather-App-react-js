@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import './input.css';
+import './Loader.css';
+
 import Navbar2 from './Navbar';
 
 function App() {
@@ -31,8 +33,8 @@ function App() {
   }
 
   return (
-    <div>
-      <div className="col-md-4">
+    <div >
+      <div className="col-md-4" >
         <div className="container">
           <div className="search-container">
             <input
@@ -52,7 +54,10 @@ function App() {
       <div className="col-md-8"></div>
 
       {loading ? ( // Show loader if loading state is true
-        <div className="hourglassBackground">
+        <div className="cardm">
+           <div className="card">
+           <div className="main" >
+          <div className="hourglassBackground">
           <div className="hourglassContainer">
             <div className="hourglassCurves"></div>
             <div className="hourglassCapTop"></div>
@@ -61,7 +66,10 @@ function App() {
             <div className="hourglassSandStream"></div>
             <div className="hourglassCapBottom"></div>
             <div className="hourglassGlass"></div>
+            </div>
+            </div>
           </div>
+        </div>
         </div>
       ) : weatherd ? ( // Show weather card if weatherd is not null
         <div className="cardm">
